@@ -1,0 +1,11 @@
+# ProjetFlask
+ 
+ pip freeze > requirements.txt -> sert à indiquer les informations nécessaires pour lancer le projet.
+
+ Un paquet est essentiellement un ensemble de modules python rassemblés dans un même dossier. Il est ensuite possible de rajouter facilement un sous-module d'un paquet dans l'espace de noms courant, afin de pouvoir utiliser les variables et les méthodes qu'il propose.
+
+ j'ai oublié de faire mon readme dans la 1ère séance.
+
+## RiverHuche
+
+###
