@@ -6,6 +6,9 @@
 
  j'ai oublié de faire mon readme dans la 1ère séance.
 
+importer toutes les variables en une fois dans votre projet en utilisant la méthode
+config.from_object(file_name)
+
 ## RiverHuche
 
 ###
