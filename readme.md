@@ -6,6 +6,7 @@
 
  j'ai oublié de faire mon readme dans la 1ère séance.
 
+#### Séance 2
 importer toutes les variables en une fois dans votre projet en utilisant la méthode
 config.from_object(file_name)
 
@@ -15,6 +16,12 @@ vous passez l'instance de l'objet que vous voulez créer.
 db.session.commit() : Chaque création est ajoutée dans une session. Lorsque vous avez terminé
 d'ajouter des éléments, vous devez indiquer à SQLAlchemy de faire les requêtes dans la base pour
 finaliser l'opération.
+
+##### Séance 3
+
+ajustement de la view ABOUT, notamment de l'import. 
+ajout de la base de données monApp.db avec la commande loaddb
+Réalisation des commandes dans le shell
 
 ## RiverHuche
 

@@ -1,5 +1,6 @@
-import click, logging as lg
+import click,logging as lg
 from .app import app, db
+
 
 @app.cli.command()
 @click.argument('filename')

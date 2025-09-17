@@ -7,6 +7,9 @@ class Auteur(db.Model):
     def __init__(self, Nom):
         self.Nom = Nom
 
+    def __repr__ (self ):
+        return "<Auteur (%d) %s>" % (self.idA , self.Nom)
+
 class Livre(db.Model):
     idL = db.Column(db.Integer,primary_key=True)
     Prix = db.Column(db.Float)
@@ -16,14 +19,17 @@ class Livre(db.Model):
     auteur_id = db.Column(db.Integer,db.ForeignKey("auteur.idA"))
     auteur = db.relationship("Auteur",backref =db.backref("livres",lazy="dynamic"))
 
-    def __init__(self,idL,Prix,Titre,Url,Img,auteur_id,auteur):
-        self.idL = idL
+    def __repr__ (self ):
+        return "<Livre (%d) %s>" % (self.idL , self.Titre)
+
+    def __init__(self,Prix,Titre,Url,Img,auteur_id):
+        #self.idL = idL
         self.Prix = Prix
         self.Titre = Titre
         self.Url = Url
         self.Img = Img
         self.auteur_id = auteur_id
-        self.auteur = auteur
+        #self.auteur = auteur
 
 
 
