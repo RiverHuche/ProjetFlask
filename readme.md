@@ -23,6 +23,8 @@ ajustement de la view ABOUT, notamment de l'import.
 ajout de la base de données monApp.db avec la commande loaddb
 Réalisation des commandes dans le shell
 
+Ajout d'une views contact (oubli TP1)
+
 ## RiverHuche
 
 ###

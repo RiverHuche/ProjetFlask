@@ -12,5 +12,9 @@ def index():
 def index1():
     return ABOUT
 
+@app.route('/contact/')
+def index2():
+    return CONTACT
+
 if __name__== "__main__":
     app.run()
