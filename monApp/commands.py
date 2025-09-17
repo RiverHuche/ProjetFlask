@@ -38,4 +38,4 @@ def loaddb(filename):
                             auteur_id = auteur.idA)
             db.session.add(objet)
     db.session.commit()
-    lg.warning('Database initialized!')s
+    lg.warning('Database initialized!')
