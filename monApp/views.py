@@ -1,4 +1,6 @@
-from flask import Flask, config
+from flask import Flask
+
+from config import *
 app = Flask(__name__)
 
 @app.route('/')
@@ -8,6 +10,7 @@ def index():
 
 @app.route('/about/')
 def index1():
-    return config.ABOUT
+    return ABOUT
+
 if __name__== "__main__":
     app.run()
