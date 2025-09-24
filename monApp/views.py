@@ -1,11 +1,14 @@
 from flask import Flask
+from .app import app
+from flask import render_template
 
 from config import *
 app = Flask(__name__)
 
 @app.route('/')
+@app.route('/index/')
 def index():
-    return "Hello world !"
+    return render_template("index.html",title="R3.01 Dev Web avec Flask", name="Cricri")
 
 
 @app.route('/about/')
