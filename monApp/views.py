@@ -10,11 +10,11 @@ def index():
 
 @app.route('/about/')
 def about():
-    return ABOUT
+    return render_template("about.html",title="A propos de nous")
 
 @app.route('/contact/')
 def contact():
-    return CONTACT
+    return render_template("contact.html",title="Nous contacter")
 
 if __name__== "__main__":
     app.run()
