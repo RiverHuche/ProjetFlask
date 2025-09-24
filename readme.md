@@ -25,6 +25,11 @@ Réalisation des commandes dans le shell
 
 Ajout d'une views contact (oubli TP1)
 
+
+##### Séance 4
+
+Ajout du fichier index.html dans templates.
+
 ## RiverHuche
 
 ###
