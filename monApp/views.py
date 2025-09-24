@@ -1,9 +1,6 @@
-from flask import Flask
 from .app import app
 from flask import render_template
-
 from config import *
-app = Flask(__name__)
 
 @app.route('/')
 @app.route('/index/')
@@ -12,11 +9,11 @@ def index():
 
 
 @app.route('/about/')
-def index1():
+def about():
     return ABOUT
 
 @app.route('/contact/')
-def index2():
+def contact():
     return CONTACT
 
 if __name__== "__main__":

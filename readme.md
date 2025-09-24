@@ -29,6 +29,9 @@ Ajout d'une views contact (oubli TP1)
 ##### Séance 4
 
 Ajout du fichier index.html dans templates.
+Affichage de la template du fichier index.html dans la méthode index().
+modification d'import dans le fichier __init qui faisait bug le chargement des vues.
+Ajout des templates pour les deux autres vues : contact et about.
 
 ## RiverHuche
 

@@ -1,5 +1,5 @@
-from .app import app
+from .app import app, db
 
-import monApp.views
+import monApp.views as views
 import monApp.commands
 import monApp.models
