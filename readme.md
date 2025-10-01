@@ -35,4 +35,6 @@ Ajout des templates pour les deux autres vues : contact et about.
 
 ## RiverHuche
 
-###
+##### Séance 5 
+
+Scinder index en 2 parties, avec base.html et index.html en implémentant ud nouveau code
