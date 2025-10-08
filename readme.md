@@ -39,6 +39,11 @@ Scinder index en 2 parties, avec base.html et index.html en implémentant ud nou
 
 ##### Séance 6
 
+Mise à jour de la base html,pour un rendu plus fluide et agréable à travers un menu, un bootstrap etc..
+
+Debut TP5
+installation de pip flask-wtf
+Ajout d'une route auteur avec un idA, soit ajout d'une vue pour ce dernier
 
 
 ## RiverHuche

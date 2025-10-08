@@ -2,6 +2,7 @@ from .app import app
 from flask import render_template, request
 from config import *
 from monApp.models import Auteur ,Livre
+from monApp.forms import FormAuteur
 
 @app.route('/')
 @app.route('/index/')
@@ -25,6 +26,12 @@ def contact():
 def getAuteurs():
     lesAuteurs = Auteur.query.all() 
     return render_template('auteurs_list.html', title="R3.01 Dev Web avec Flask", auteurs=lesAuteurs)
+
+@app.route('/auteurs/<idA>/update/')
+def updateAuteur(idA):
+    unAuteur = Auteur.query.get(idA)
+    unForm = FormAuteur(idA=unAuteur.idA , Nom=unAuteur.Nom)
+    return render_template("auteur_update.html",selectedAuteur=unAuteur, updateForm=unForm)
 
 @app.route('/livres/')
 def getLivres():
