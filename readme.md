@@ -33,8 +33,13 @@ Affichage de la template du fichier index.html dans la méthode index().
 modification d'import dans le fichier __init qui faisait bug le chargement des vues.
 Ajout des templates pour les deux autres vues : contact et about.
 
-## RiverHuche
-
 ##### Séance 5 
 
 Scinder index en 2 parties, avec base.html et index.html en implémentant ud nouveau code
+
+##### Séance 6
+
+
+
+## RiverHuche
+
