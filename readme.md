@@ -55,5 +55,7 @@ Ajout du support pour visualiser erreurs de validation. màj template auteur_upd
 
 Ajout d'une fonctionnalité "ajout d'un auteur", donc ajout de la fonctionnalité dans le menu, puis création de la vue et de la template pour permettre la réalisation de cette action, et ajout d'une autre vue insertAuteur pour validé la création.
 
+Ajout de vues pour permettre la suppression d'un auteur, via deleteAuteur et eraseAuteur pour valider l'action de suppression, et inévitablement implémentation d'une template auteur_delete.html pour afficher et prendre en compte la confirmation de la suppression
+
 ## RiverHuche
 
