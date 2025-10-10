@@ -45,6 +45,11 @@ Debut TP5
 installation de pip flask-wtf
 Ajout d'une route auteur avec un idA, soit ajout d'une vue pour ce dernier
 
+##### Additionnel
+
+ Ajout d'une template auteur_update pour compléter la vue ajouté précédement, permettant de mettre à jour les données sur un auteur.
+
+ Ajout d'une view pour permettre de sauvegarder les modifications apportées à un auteur, puis d'une template auteur_update.html pour mettre en place l'action sur le formulaire. et enfin création d'une template auteur_view.html pour illustrer la vue ajoutée.
 
 ## RiverHuche
 
