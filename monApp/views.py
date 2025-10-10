@@ -56,6 +56,24 @@ def viewAuteur(idA):
     unForm = FormAuteur (idA=unAuteur.idA , Nom=unAuteur.Nom)
     return render_template("auteur_view.html",selectedAuteur=unAuteur, viewForm=unForm)
 
+@app.route('/auteur/')
+def createAuteur():
+    unForm = FormAuteur()
+    return render_template("auteur_create.html", createForm=unForm)
+
+@app.route ('/auteur/insert/', methods =("POST" ,))
+def insertAuteur():
+    insertedAuteur = None
+    unForm = FormAuteur()
+    if unForm.validate_on_submit():
+        insertedAuteur = Auteur(Nom=unForm.Nom.data)
+        db.session.add(insertedAuteur)
+        db.session.commit()
+        insertedId = Auteur.query.count()
+        return redirect(url_for('viewAuteur', idA=insertedId))
+    
+    return render_template("auteur_create.html", createForm=unForm)
+
 @app.route('/livres/')
 def getLivres():
     lesLivres = Livre.query.all() 
