@@ -58,5 +58,16 @@ Ajout d'une fonctionnalité "ajout d'un auteur", donc ajout de la fonctionnalit�
 Ajout de vues pour permettre la suppression d'un auteur, via deleteAuteur et eraseAuteur pour valider l'action de suppression, et inévitablement implémentation d'une template auteur_delete.html pour afficher et prendre en compte la confirmation de la suppression
 
 Réitération sur Livre de presque toutes les modifications apportées sur Auteur, soit juste ajout d'un livres_view.html et d'un livres_update.html et de leur ves, car on ne cherche pas à supprimer ni ajouter de livres.
+
+
+##### TP6
+
+Ajout d'une classe User pour permettre l'authentification des utilisateurs sur l'application, mise à jour également dans la base de données.
+
+Ajout d'une fonction dans la BD (newuser) permettant d'ajouter un nouvel utilisateur à la BD
+
+Ajout d'une fonction newpasswrd pour changer le mdp d'un utilisateur déjà existant.
+
+
 ## RiverHuche
 

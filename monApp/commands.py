@@ -40,3 +40,46 @@ def loaddb(filename):
             db.session.add(objet)
     db.session.commit()
     lg.warning('Database initialized!')
+
+@app.cli.command()
+def syncdb():
+     "Creates all missing tables."
+     db.create_all()
+     lg.warning('Database synchronized!')
+
+
+@app.cli.command()
+@click.argument('login')
+@click.argument('pwd')
+def newuser (login, pwd):
+    "Adds a new user"
+    from . models import User
+    from hashlib import sha256
+    m = sha256()
+    m.update(pwd.encode())
+    unUser = User(Login=login ,Password =m.hexdigest())
+    db.session.add(unUser)
+    db.session.commit()
+    lg.warning('User' + login + 'created!')
+
+
+
+
+
+
+@app.cli.command()
+@click.argument('login')
+@click.argument('newpwd')
+def newpassword(login, newpwd):
+    "Edit a password on an existing user"
+    from .models import User
+    from hashlib import sha256
+
+    user = User.query.filter_by(Login=login).first()
+    if not user:
+        return lg.error("User' + login 'error!")
+    m = sha256()
+    m.update(newpwd.encode())
+    user.Password = m.hexdigest()
+    db.session.commit()
+    lg.warning("Le mot de passe de " + login + "a été modifié avec succès")
