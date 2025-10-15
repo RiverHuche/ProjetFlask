@@ -26,6 +26,12 @@
                     <td>{{ unLivre.Url }}</td>
                     <td><img src="../static/images/{{ unLivre.Img }}" alt=""></td>
                     <td>{{ unLivre.auteur }}</td>
+                    <td><div class="task-controls">
+                        <a href="{{url_for('viewLivre',idL=unLivre.idL)}}" class="btn btn-nfo">
+                        Voir <i class="fas fa-eye"></i></a>
+                        <a href="{{url_for('updateLivre',idL=unLivre.idL)}}" class="btn btn-warning">
+                        Editer <i class="fas fa-pen"></i></a>
+                        </div>
             </tr>
         {% endfor %}
         </tbody>

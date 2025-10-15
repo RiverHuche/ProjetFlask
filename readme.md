@@ -57,5 +57,6 @@ Ajout d'une fonctionnalité "ajout d'un auteur", donc ajout de la fonctionnalit�
 
 Ajout de vues pour permettre la suppression d'un auteur, via deleteAuteur et eraseAuteur pour valider l'action de suppression, et inévitablement implémentation d'une template auteur_delete.html pour afficher et prendre en compte la confirmation de la suppression
 
+Réitération sur Livre de presque toutes les modifications apportées sur Auteur, soit juste ajout d'un livres_view.html et d'un livres_update.html et de leur ves, car on ne cherche pas à supprimer ni ajouter de livres.
 ## RiverHuche
 
