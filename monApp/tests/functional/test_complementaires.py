@@ -4,9 +4,9 @@ from monApp.models import Livre
 from monApp.tests.functional.test_routes_auteur import login
 
 
-# ====================================================================
+
 # 1. TESTS DES ROUTES PUBLIQUES GÉNÉRALES
-# ====================================================================
+
 
 def test_index_route(client):
     """Teste la route /index/."""
@@ -35,9 +35,9 @@ def test_logout_route(client):
     assert response.status_code == 302
     assert response.headers['Location'] == '/' or response.headers['Location'] == '/index/'
 
-# ====================================================================
+
 # 2. TESTS DES ROUTES LIVRES (GET)
-# ====================================================================
+
 
 def test_livres_liste(client):
     """Teste l'accès à la liste des livres (publique)."""
@@ -52,9 +52,9 @@ def test_livre_view(client):
     assert response.status_code == 200
     assert b'15.5' in response.data 
 
-# ====================================================================
+
 # 3. TESTS DES ROUTES LIVRES (PROTÉGÉES GET/POST)
-# ====================================================================
+
 
 # --- Route GET /livres/<idL>/update/ ---
 
