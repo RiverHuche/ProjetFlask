@@ -9,4 +9,18 @@
     </div>
     <a href="{{ url_for('getAuteurs') }}" class="btn btn-secondary">Retour</a>
 </form >
+
+<hr>
+<h2>Livres de cet auteur</h2>
+{% if selectedAuteur.livres.count() > 0 %}
+    <ul class="list-group">
+        {% for livre in selectedAuteur.livres %}
+            <li class="list-group-item">
+                <a href="{{ url_for('viewLivre', idL=livre.idL) }}">{{ livre.Titre }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Cet auteur n'a aucun livre enregistré dans la base de données.</p>
+{% endif %}
 {% endblock %}

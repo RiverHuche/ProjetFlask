@@ -15,6 +15,7 @@
                     <th>Url</th>
                     <th>Première de Couverture</th>
                     <th>Auteur</th>
+                    <th>Contrôles</th>
             </tr>
         </thead>
         <tbody>
@@ -26,12 +27,16 @@
                     <td>{{ unLivre.Url }}</td>
                     <td><img src="../static/images/{{ unLivre.Img }}" alt=""></td>
                     <td>{{ unLivre.auteur }}</td>
-                    <td><div class="task-controls">
-                        <a href="{{url_for('viewLivre',idL=unLivre.idL)}}" class="btn btn-nfo">
-                        Voir <i class="fas fa-eye"></i></a>
-                        <a href="{{url_for('updateLivre',idL=unLivre.idL)}}" class="btn btn-warning">
-                        Editer <i class="fas fa-pen"></i></a>
+                    <td>
+                        <div class="task-controls">
+                            <a href="{{url_for('viewLivre',idL=unLivre.idL)}}" class="btn btn-info">
+                            Voir <i class="fas fa-eye"></i></a>
+                            {% if current_user.is_authenticated %}
+                            <a href="{{url_for('updateLivre',idL=unLivre.idL)}}" class="btn btn-warning">
+                            Editer <i class="fas fa-pen"></i></a>
+                            {% endif %}
                         </div>
+                    </td>
             </tr>
         {% endfor %}
         </tbody>

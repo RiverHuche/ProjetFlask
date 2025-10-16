@@ -77,9 +77,9 @@ def newpassword(login, newpwd):
 
     user = User.query.filter_by(Login=login).first()
     if not user:
-        return lg.error("User' + login 'error!")
+        return lg.error('User' + login +'error!')
     m = sha256()
     m.update(newpwd.encode())
     user.Password = m.hexdigest()
     db.session.commit()
-    lg.warning("Le mot de passe de " + login + "a été modifié avec succès")
+    lg.warning('Le mot de passe de ' + login + 'a été modifié avec succès')
