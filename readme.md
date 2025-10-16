@@ -45,7 +45,7 @@ Debut TP5
 installation de pip flask-wtf
 Ajout d'une route auteur avec un idA, soit ajout d'une vue pour ce dernier
 
-### Suite TP5
+## Suite TP5
 
  Ajout d'une template auteur_update pour compléter la vue ajouté précédement, permettant de mettre à jour les données sur un auteur.
 
@@ -60,7 +60,7 @@ Ajout de vues pour permettre la suppression d'un auteur, via deleteAuteur et era
 Réitération sur Livre de presque toutes les modifications apportées sur Auteur, soit juste ajout d'un livres_view.html et d'un livres_update.html et de leur ves, car on ne cherche pas à supprimer ni ajouter de livres.
 
 
-### TP6
+## TP6
 
 Ajout d'une classe User pour permettre l'authentification des utilisateurs sur l'application, mise à jour également dans la base de données.
 
@@ -68,7 +68,7 @@ Ajout d'une fonction dans la BD (newuser) permettant d'ajouter un nouvel utilisa
 
 Ajout d'une fonction newpasswrd pour changer le mdp d'un utilisateur déjà existant.
 
-### Suite TP6
+## Suite TP6
 
 Mise en place de l'authentification avec l'extension Flask-Login.
 
@@ -92,7 +92,7 @@ Protection des routes de création, modification et suppression avec le décorat
 
 Mise en place d'une redirection automatique. Si un utilisateur non connecté tente d'accéder à une page protégée, il est automatiquement redirigé vers la page de connexion. Après s'être connecté, il est ensuite redirigé vers la page qu'il essayait d'atteindre initialement.
 
-### TP7
+## TP7
 
 Mise en place de l'environnement de test pour assurer la fiabilité de l'application.
 
@@ -116,5 +116,5 @@ La soumission des formulaires (ajout, modification, suppression) fonctionne et m
 
 Utilisation de l'outil coverage pour mesurer la couverture de test du code. Lancement des tests avec la commande coverage run -m pytest et génération de rapports pour identifier les parties du code non testées. L'objectif est d'atteindre une couverture supérieure à 90% pour garantir la robustesse de l'application.
 
-## RiverHuche
+# RiverHuche BUT2 2A
 
