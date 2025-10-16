@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block main %}
 <h1>Création d'un livre</h1>
-<form role="form" method="POST" action="{{ url_for('createLivre') }}">
+<form role="form" method="POST" action="{{ url_for('insertLivre') }}">
     {{ createForm.hidden_tag() }}
     
     <div class="form-group mb-3">
